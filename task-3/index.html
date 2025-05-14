@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Responsive Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>🌈 Welcome to Fun Zone</h1>
+    <p>This colorful site demonstrates responsive design, an image carousel, and API integration using JavaScript!</p>
+
+    <!-- Carousel -->
+    <div class="carousel">
+      <img src="https://via.placeholder.com/400x250/FF6B6B/ffffff?text=Image+1" class="active" alt="Image 1">
+      <img src="https://via.placeholder.com/400x250/4ECDC4/ffffff?text=Image+2" alt="Image 2">
+      <img src="https://via.placeholder.com/400x250/1A535C/ffffff?text=Image+3" alt="Image 3">
+      <div class="buttons">
+        <button onclick="prev()">⏮ Prev</button>
+        <button onclick="next()">Next ⏭</button>
+      </div>
+    </div>
+
+    <!-- Joke Fetcher -->
+    <div class="joke-section">
+      <h2>😂 Random Joke Generator</h2>
+      <p id="joke">Click the button to laugh!</p>
+      <button onclick="getJoke()">Tell Me a Joke</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

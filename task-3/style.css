@@ -1,0 +1,104 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #FFDEE9, #B5FFFC);
+  color: #333;
+}
+
+.container {
+  max-width: 960px;
+  margin: 40px auto;
+  background: #ffffffee;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+h1, h2 {
+  color: #222;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.1rem;
+  margin: 10px 0 20px;
+}
+
+.carousel {
+  margin: 30px 0;
+}
+
+.carousel img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.carousel img.active {
+  display: block;
+  margin: auto;
+  transform: scale(1.02);
+}
+
+.buttons {
+  margin-top: 15px;
+}
+
+button {
+  background: linear-gradient(135deg, #6A82FB, #FC5C7D);
+  border: none;
+  padding: 12px 24px;
+  margin: 6px;
+  font-size: 1rem;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #45A29E, #66FCF1);
+}
+
+.joke-section {
+  margin-top: 40px;
+  background-color: #f0f9ff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  button {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+}
