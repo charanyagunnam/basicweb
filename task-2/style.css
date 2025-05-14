@@ -1,0 +1,172 @@
+/* Reset and Base */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fef9ff;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #6a11cb;
+}
+
+/* Layout Grid */
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "nav aside"
+    "footer footer";
+  grid-template-columns: 200px 1fr;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  grid-area: header;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  padding: 1.5em;
+  text-align: center;
+}
+
+/* Navigation */
+nav {
+  grid-area: nav;
+  background: #ffe0f0;
+  padding: 1em;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  margin: 1em 0;
+  font-weight: bold;
+}
+
+/* Main Content */
+main {
+  grid-area: main;
+  padding: 2em;
+  background: #ffffff;
+}
+
+/* Sidebar */
+aside {
+  grid-area: aside;
+  background: #e0f7fa;
+  padding: 1em;
+  font-style: italic;
+}
+
+/* Footer */
+footer {
+  grid-area: footer;
+  background: linear-gradient(to right, #ff758c, #ff7eb3);
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+/* Form Styling */
+.form-container {
+  background: #f1f8ff;
+  border-left: 5px solid #2575fc;
+  padding: 1.5em;
+  margin-bottom: 2em;
+  border-radius: 10px;
+}
+
+.form-container input,
+.form-container textarea,
+.form-container button {
+  width: 100%;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  padding: 0.8em;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+.form-container button {
+  background-color: #6a11cb;
+  color: white;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.form-container button:hover {
+  background-color: #5011a8;
+}
+
+/* To-Do Styling */
+.todo-container {
+  background: #fff5f8;
+  border-left: 5px solid #ff7eb3;
+  padding: 1.5em;
+  border-radius: 10px;
+}
+
+.todo-container input {
+  width: 70%;
+  padding: 0.7em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.todo-container button {
+  padding: 0.7em 1em;
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-left: 0.5em;
+  transition: 0.3s ease;
+}
+
+.todo-container button:hover {
+  background-color: #e91e63;
+}
+
+#taskList {
+  margin-top: 1em;
+  padding-left: 0;
+  list-style: none;
+}
+
+#taskList li {
+  background: #fff;
+  margin-bottom: 0.5em;
+  padding: 0.75em;
+  border-radius: 5px;
+  border-left: 5px solid #6a11cb;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#taskList li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "aside"
+      "footer";
+    grid-template-columns: 1fr;
+  }
+
+  nav, main, aside {
+    padding: 1em;
+  }
+}

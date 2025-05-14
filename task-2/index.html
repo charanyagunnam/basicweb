@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Colorful Web Practice</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1> Web Practice Project</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#">🏠 Home</a></li>
+        <li><a href="#">📧 Contact</a></li>
+        <li><a href="#">✅ To-Do</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- Contact Form -->
+      <div class="form-container">
+        <h2>Contact Us 💬</h2>
+        <form id="contactForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" required></textarea>
+
+          <button type="submit">Send Message 🚀</button>
+        </form>
+      </div>
+
+      <!-- To-Do List -->
+      <div class="todo-container">
+        <h2>To-Do List 📝</h2>
+        <input type="text" id="taskInput" placeholder="Add a new task">
+        <button onclick="addTask()">Add ➕</button>
+        <ul id="taskList"></ul>
+      </div>
+    </main>
+
+    <aside>
+      <p><strong>✨ Sidebar Info</strong></p>
+      <p>Tips, updates, or reminders go here!</p>
+    </aside>
+
+    <footer>
+      <p>🌟 &copy; 2025  Project by You</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
